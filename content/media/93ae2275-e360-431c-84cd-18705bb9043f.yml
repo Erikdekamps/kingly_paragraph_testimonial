@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 93ae2275-e360-431c-84cd-18705bb9043f
+  bundle: image
+  default_langcode: en
+  depends:
+    3cba973f-7dcf-4b17-ac03-dd280fa17cbc: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: testimonial.png
+  created:
+    -
+      value: 1753726918
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: 3cba973f-7dcf-4b17-ac03-dd280fa17cbc
+      alt: Testimonial
+      title: ''
+      width: 300
+      height: 300
