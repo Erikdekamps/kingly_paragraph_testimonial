@@ -1,0 +1,68 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.kingly_paragraph_testimonial.field_testimonial_date
+    - field.field.paragraph.kingly_paragraph_testimonial.field_testimonial_image
+    - field.field.paragraph.kingly_paragraph_testimonial.field_testimonial_job_title
+    - field.field.paragraph.kingly_paragraph_testimonial.field_testimonial_name
+    - field.field.paragraph.kingly_paragraph_testimonial.field_testimonial_quote
+    - field.field.paragraph.kingly_paragraph_testimonial.field_testimonial_rating
+    - paragraphs.paragraphs_type.kingly_paragraph_testimonial
+  module:
+    - datetime
+    - media_library
+    - text
+id: paragraph.kingly_paragraph_testimonial.default
+targetEntityType: paragraph
+bundle: kingly_paragraph_testimonial
+mode: default
+content:
+  field_testimonial_image:
+    type: media_library_widget
+    weight: 0
+    region: content
+    settings:
+      media_types:
+        - image
+    third_party_settings: {  }
+  field_testimonial_quote:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_testimonial_rating:
+    type: number
+    weight: 2
+    region: content
+    settings:
+      placeholder: 'e.g., 4.5'
+    third_party_settings: {  }
+  field_testimonial_name:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_testimonial_job_title:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_testimonial_date:
+    type: datetime_default
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

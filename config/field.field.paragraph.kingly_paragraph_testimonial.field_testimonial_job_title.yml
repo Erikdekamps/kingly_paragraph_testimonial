@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_testimonial_job_title
+    - paragraphs.paragraphs_type.kingly_paragraph_testimonial
+id: paragraph.kingly_paragraph_testimonial.field_testimonial_job_title
+field_name: field_testimonial_job_title
+entity_type: paragraph
+bundle: kingly_paragraph_testimonial
+label: 'Job Title / Company'
+description: 'Enter the author''s job title and/or company (e.g., "CEO, Acme Inc.").'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

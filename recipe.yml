@@ -1,0 +1,12 @@
+name: 'Kingly Testimonial Paragraph'
+type: 'Site'
+description: 'Configures a responsive testimonial paragraph type, rendered as a card with an image, quote, and star rating.'
+recipes:
+  - kingly_paragraph_media
+install:
+  - paragraphs
+  - text
+  - datetime
+  - field
+config:
+  strict: false

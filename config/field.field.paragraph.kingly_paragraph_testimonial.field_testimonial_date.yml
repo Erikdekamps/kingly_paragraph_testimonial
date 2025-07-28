@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_testimonial_date
+    - paragraphs.paragraphs_type.kingly_paragraph_testimonial
+  module:
+    - datetime
+id: paragraph.kingly_paragraph_testimonial.field_testimonial_date
+field_name: field_testimonial_date
+entity_type: paragraph
+bundle: kingly_paragraph_testimonial
+label: Date
+description: 'Select the date the testimonial was given.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

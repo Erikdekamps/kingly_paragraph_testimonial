@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_testimonial_quote
+    - filter.format.basic_html
+    - paragraphs.paragraphs_type.kingly_paragraph_testimonial
+  module:
+    - text
+id: paragraph.kingly_paragraph_testimonial.field_testimonial_quote
+field_name: field_testimonial_quote
+entity_type: paragraph
+bundle: kingly_paragraph_testimonial
+label: Quote
+description: 'Enter the main text of the testimonial.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

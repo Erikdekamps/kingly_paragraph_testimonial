@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.kingly_paragraph_testimonial.field_testimonial_date
+    - field.field.paragraph.kingly_paragraph_testimonial.field_testimonial_image
+    - field.field.paragraph.kingly_paragraph_testimonial.field_testimonial_job_title
+    - field.field.paragraph.kingly_paragraph_testimonial.field_testimonial_name
+    - field.field.paragraph.kingly_paragraph_testimonial.field_testimonial_quote
+    - field.field.paragraph.kingly_paragraph_testimonial.field_testimonial_rating
+    - paragraphs.paragraphs_type.kingly_paragraph_testimonial
+id: paragraph.kingly_paragraph_testimonial.default
+targetEntityType: paragraph
+bundle: kingly_paragraph_testimonial
+mode: default
+content:
+  field_testimonial_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_testimonial_date: true
+  field_testimonial_job_title: true
+  field_testimonial_name: true
+  field_testimonial_quote: true
+  field_testimonial_rating: true
+  search_api_excerpt: true
